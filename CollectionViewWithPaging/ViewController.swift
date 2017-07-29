@@ -57,9 +57,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             self.view.backgroundColor = selectedColor
         }
         
-        // You can color the cells so you could see how they behave:
-        //        let isEvenCell = CGFloat(indexPath.row).truncatingRemainder(dividingBy: 2) == 0
-        //        cell.backgroundColor = isEvenCell ? UIColor(white: 0.9, alpha: 1) : .white
+        // Added color to the cells so you could see how they behave:
+        let isEvenCell = CGFloat(indexPath.row).truncatingRemainder(dividingBy: 2) == 0
+        cell.backgroundColor = isEvenCell ? UIColor(white: 0.9, alpha: 1) : .white
         
         return cell
     }
